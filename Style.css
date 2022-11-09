@@ -1,0 +1,44 @@
+body{
+    background-color: lightblue;
+}
+.topnav {
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  /* Style länkarna */
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* färg på länkar */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* färg på aktiva länken */
+  .topnav a.active {
+    background-color: #22bb41;
+    color: white;
+  }
+
+#blackbar{
+    color: black;
+    background-color: black;
+}
+
+footer{
+    position: absolute;
+    text-align: center;
+    vertical-align: bottom;
+    bottom: 10;
+    right: 50;
+    width: 200px;
+    height: 150px;
+}
