@@ -1,6 +1,7 @@
 body{
-    background-color: lightblue;
+Color: red;
 }
+
 .topnav {
     background-color: black;
     overflow: hidden;
@@ -34,6 +35,7 @@ body{
 }
 
 footer{
+    color: white;
     position: absolute;
     text-align: center;
     vertical-align: bottom;
@@ -41,4 +43,68 @@ footer{
     right: 50;
     width: 200px;
     height: 150px;
+    outline: 5px dashed grey;
+}
+
+img 
+{ 
+  max-width: 100%; 
+  height: center; 
+}
+
+.bild
+{
+ text-align: center;
+
+}
+
+.topnav
+{
+  width: 100%
+}
+
+.start
+{
+  background-image: url('Bilder/tennisbg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  min-height: 100%;
+  position: relative;
+  isolation: isolate;
+}
+
+.start::after
+{
+  content: '';
+  position: absolute;
+  background: black;
+  opacity: .7;
+  inset: 0;
+  z-index: -1;
+}
+
+h1
+{
+  color: white;
+}
+
+h2
+{
+  color: white;
+}
+
+h3
+{
+  color: white;
+}
+
+p
+{
+  color: white;
+}
+
+label
+{
+  color: white;
 }
