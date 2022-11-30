@@ -1,3 +1,5 @@
+
+
 body{
 Color: red;
 }
@@ -55,7 +57,6 @@ img
 .bild
 {
  text-align: center;
-
 }
 
 .topnav
@@ -84,6 +85,15 @@ img
   z-index: -1;
 }
 
+.output
+{
+  outline: 5px dashed grey;
+  text-align: center;
+  vertical-align: center;
+  width: 150;
+  height: 70px;
+}
+
 h1
 {
   color: white;
@@ -107,4 +117,18 @@ p
 label
 {
   color: white;
+}
+
+.img-banner
+{
+  display: block;
+}
+
+@media only screen and (min-width: 700px)
+{
+  .img-banner
+  {
+    display: none;
+    width: 100%;
+  }
 }
