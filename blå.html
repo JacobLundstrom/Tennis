@@ -1,14 +1,19 @@
 <html>
 <head>
+    <meta charset="utf-8">
     <link rel="Stylesheet" href="style.css">
+    <title>Jacobs Tennisklubb</title>
+    <script src="java.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-    <div class="topnav">
-        <a href="index.html">hem</a>
-        <a class="active" href="banor.html">Banor</a>
-        <a href="omkl.html">Omklädningsrum</a>
-        <a href="bastu.html">Bastu</a>
-        <a href="kalender.html">kalender</a>
-    </div>
+    <img class="img-banner" src="Bilder/html2.jpg" alt="html test bild">
+<div class="topnav">
+    <a href="index.html">hem</a>
+    <a class="active" href="banor.html">Banor</a>
+    <a href="omkl.html">Omklädningsrum</a>
+    <a href="bastu.html">Bastu</a>
+    <a href="kalender.html">kalender</a>
+</div>
     <hr id="blackbar">
     <div class="Start">
     <center>
@@ -16,24 +21,46 @@
     <H2>Var vänlig, Fyll i dina uppgifter i formuläret nedan för att skapa en bokning på planen</H2>
 
 
+    <!----
     <form action="/Confirm.html">
-        <label for="fname">Förnamn:</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <label for="lname">Efternamn:</label><br>
-        <input type="text" id="lname" name="lname" value=""><br><br>
-        <label for="lname">Mobilnummer:</label><br>
-        <input type="text" id="Telefon" name="Telefon" value=""><br><br>
+
+       
         <label for="bastu">kryssa i om du även vill boka en bastu</label><br>
         <input type="checkbox" id="bastu" name="bastu" value="bastu">
-        <p> </p>
+        <p></p>
         <label for="gender">kryssa i vilket omklädningsrum du behöver</label><br>
         <input type="checkbox" id="Kille" name="Kille">
         <label for="Kille">Kille</label>
         <input type="checkbox" id="Tjej" name="Tjej">
         <label for="Tjej">Tjej</label>
         <p> </p>
-        <input type="submit" value="Boka">
-      </form> 
+        <input type="submit"  value="Boka">
+
+    -->
+
+
+
+<article class="regular">
+    <label for="fname"></label><br>
+        <input type="text" id="num" placeholder="Telefon Nummer" maxlength="10"><br>
+    <a href="Confirm.html">
+        <input type="button" id="btn1" value="Boka"/></a>
+
+    <p class="output" id="output1"></p>
+</article>
+
+<script>
+    const txt1 = document.getElementById('num');
+    const btn1 = document.getElementById('btn1');
+    const out1 =document.getElementById('output1');
+    
+function fun1()
+{
+    out1.innerHTML = txt1.value;
+}
+    
+    btn1.addEventListener('click',fun1);
+</script>
 </div>
 </body>
 </head>
